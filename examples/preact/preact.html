@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script src="/dist/fish-hook.js"></script>
+    <script type="module">
+      import { h, Component, render } from "https://unpkg.com/preact?module";
+      import * as hooks from "https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module";
+      import htm from "https://unpkg.com/htm?module";
+      import FishHook from "../../src/index.js";
+      const fh = new FishHook(hooks);
+
+      // Initialize htm with Preact
+      const html = htm.bind(h);
+
+      const app = html`
+        <h1>Hello World!</h1>
+      `;
+      render(app, document.body);
+    </script>
+  </body>
+</html>

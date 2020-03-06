@@ -1,0 +1,61 @@
+{
+  "name": "fish-hook",
+  "version": "1.0.0",
+  "description": "Collection of extended React Hooks",
+  "main": "dist/fish-hook.js",
+  "module": "src/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "webpack",
+    "dev": "webpack --progress --colors --watch",
+    "lint": "./node_modules/.bin/eslint src",
+    "test": "cross-env NODE_ENV=commonjs ./node_modules/.bin/jest",
+    "test:watch": "npm run jest -- --watch",
+    "precommit": "npm run lint && npm run test",
+    "prepare": "npm run clean && npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamjeffries/fish-hook.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "context",
+    "provider",
+    "proxy"
+  ],
+  "author": "Adam Jeffries",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamjeffries/fish-hook/issues"
+  },
+  "homepage": "https://github.com/adamjeffries/fish-hook#readme",
+  "pre-commit": [
+    "precommit"
+  ],
+  "jest": {
+    "verbose": true,
+    "testRegex": "(/tests/.*\\.test.js)$"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
+    "jest": "^25.1.0",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

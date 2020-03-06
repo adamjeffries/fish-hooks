@@ -1,1 +1,1 @@
-# usehooks
+# fish-hook
