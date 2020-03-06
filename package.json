@@ -1,8 +1,8 @@
 {
-  "name": "fish-hook",
+  "name": "fish-hooks",
   "version": "1.0.0",
   "description": "Collection of extended React Hooks",
-  "main": "dist/fish-hook.js",
+  "main": "dist/fish-hooks.js",
   "module": "src/index.js",
   "files": [
     "dist",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adamjeffries/fish-hook.git"
+    "url": "git+https://github.com/adamjeffries/fish-hooks.git"
   },
   "keywords": [
     "react",
@@ -34,9 +34,9 @@
   "author": "Adam Jeffries",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adamjeffries/fish-hook/issues"
+    "url": "https://github.com/adamjeffries/fish-hooks/issues"
   },
-  "homepage": "https://github.com/adamjeffries/fish-hook#readme",
+  "homepage": "https://github.com/adamjeffries/fish-hooks#readme",
   "pre-commit": [
     "precommit"
   ],

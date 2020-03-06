@@ -2,6 +2,6 @@ const foo = "bar";
 
 export { foo };
 
-export default function FishHook() {
+export default function FishHooks() {
   return "baz";
 }
