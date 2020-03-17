@@ -1,7 +1,2 @@
-const foo = "bar";
-
-export { foo };
-
-export default function FishHooks() {
-  return "baz";
-}
+export { useTimer } from "./hooks/useTimer.js";
+export { setup } from "./setup.js";

@@ -1,8 +1,8 @@
 {
-  "name": "fish-hooks",
+  "name": "flyhook",
   "version": "1.0.0",
   "description": "Collection of extended React Hooks",
-  "main": "dist/fish-hooks.js",
+  "main": "dist/flyhook.js",
   "module": "src/index.js",
   "files": [
     "dist",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adamjeffries/fish-hooks.git"
+    "url": "git+https://github.com/adamjeffries/flyhook.git"
   },
   "keywords": [
     "react",
@@ -34,9 +34,9 @@
   "author": "Adam Jeffries",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adamjeffries/fish-hooks/issues"
+    "url": "https://github.com/adamjeffries/flyhook/issues"
   },
-  "homepage": "https://github.com/adamjeffries/fish-hooks#readme",
+  "homepage": "https://github.com/adamjeffries/flyhook#readme",
   "pre-commit": [
     "precommit"
   ],
