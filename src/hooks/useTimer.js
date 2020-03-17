@@ -1,7 +1,8 @@
-import { useRef, useState } from "../setup.js";
+import { useRef } from "../setup.js";
+import { useRender } from "./useRender.js";
 
 export const useTimer = function(millis = 1000, run = true) {
-  const [, setStateValue] = useState(0);
+  const render = useRender();
   const ref = useRef({ value: 0, date: Date.now(), run });
 
   const tick = () => {
@@ -11,7 +12,7 @@ export const useTimer = function(millis = 1000, run = true) {
       if (now - date >= (value + 1) * millis) {
         ref.current.value = Math.floor((now - date) / millis);
         ref.current.date = now;
-        setStateValue(ref.current.value);
+        render();
       }
       if (run) tick();
     }, 0);
@@ -20,7 +21,7 @@ export const useTimer = function(millis = 1000, run = true) {
   const setValue = newValue => {
     ref.current.date = Date.now() - newValue * millis;
     ref.current.value = newValue;
-    setStateValue(ref.current.value);
+    render();
   };
 
   const toggle = runValue => {
